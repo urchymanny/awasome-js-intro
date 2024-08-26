@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: red;
+    height: 200px;
+}
+
+/* < 769px */
+@media (min-width: 425px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
